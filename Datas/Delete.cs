@@ -9,32 +9,26 @@ namespace LibraryGUI.Datas
 {
     internal class Delete
     {
-
-        public object  deleteAuthor(int id)
+        public object DeleteAuthor(int id)
         {
-
             LibraryResults results = new LibraryResults();
-
-            using  (var context = new librarydbContext())
+            using (var context = new librarydbContext())
             {
                 var author = context.Authors.Find(id);
-
-                if(author != null)
+                if (author != null)
                 {
                     context.Authors.Remove(author);
                     context.SaveChanges();
                     results.Message = "Sikeres törlés!";
                     results.Result = author;
-                    return results;
                 }
                 else
                 {
                     results.Message = "Sikertelen törlés!";
                     results.Result = author;
-                    return results;
                 }
+                return results;
             }
         }
-        
     }
 }

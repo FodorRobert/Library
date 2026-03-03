@@ -5,34 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryGUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="750">
-    <Grid>
-        <Menu>
-            <MenuItem Header="_Read">
-                <MenuItem Header="Authors" Click="MenuItem_Click" />
-                <MenuItem Header="Categories" Click="MenuItem_Click_1"/>
-                <MenuItem Header="Books" Click="MenuItem_Click_2"/>
-                <MenuItem Header="AuthorsBooks" />
-            </MenuItem>
+        Title="LibraryGUI"
+        Height="450"
+        Width="750"
+        WindowStartupLocation="CenterScreen">
 
-            <MenuItem Header="_Create">
-                <MenuItem Header="Authors" Click="MenuItem_Click_3"/>
-                <MenuItem Header="Categories" Click="MenuItem_Click_4"/>
-                <MenuItem Header="Books" Click="MenuItem_Click_5"/>
-            </MenuItem>
+	<Grid>
 
-            <MenuItem Header="_Update">
-                <MenuItem Header="Authors"/>
-                <MenuItem Header="Categories"/>
-                <MenuItem Header="Books"/>
-            </MenuItem>
+		<Grid.Background>
+			<LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+				<GradientStop Color="#141E30" Offset="0"/>
+				<GradientStop Color="#243B55" Offset="0.5"/>
+				<GradientStop Color="#2C5364" Offset="1"/>
+			</LinearGradientBrush>
+		</Grid.Background>
 
-            <MenuItem Header="_Delete">
-                <MenuItem Header="Authors"/>
-                <MenuItem Header="Categories"/>
-                <MenuItem Header="Books"/>
-            </MenuItem>
-        </Menu>
-        <Frame x:Name="MainPage" Padding="15"/>
-    </Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<Menu Grid.Row="0"
+              Background="#22000000"
+              Foreground="#a08800">
+
+			<MenuItem Header="_Read">
+				<MenuItem Header="Authors" Click="MenuItem_Click"/>
+				<MenuItem Header="Categories" Click="MenuItem_Click_1"/>
+				<MenuItem Header="Books" Click="MenuItem_Click_2"/>
+				<MenuItem Header="AuthorsBooks"/>
+			</MenuItem>
+
+			<MenuItem Header="_Create">
+				<MenuItem Header="Authors" Click="MenuItem_Click_3"/>
+				<MenuItem Header="Categories" Click="MenuItem_Click_4"/>
+				<MenuItem Header="Books" Click="MenuItem_Click_5"/>
+			</MenuItem>
+
+			<MenuItem Header="_Update">
+				<MenuItem Header="Authors"/>
+				<MenuItem Header="Categories"/>
+				<MenuItem Header="Books"/>
+			</MenuItem>
+
+			<MenuItem Header="_Delete">
+				<MenuItem Header="Authors"/>
+				<MenuItem Header="Categories"/>
+				<MenuItem Header="Books"/>
+			</MenuItem>
+		</Menu>
+
+		<Frame x:Name="MainPage"
+               Grid.Row="1"
+               Padding="15"
+               Background="#33000000"
+               NavigationUIVisibility="Hidden"/>
+		
+	</Grid>
 </Window>

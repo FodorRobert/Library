@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Robert\Source\Repos\Library\obj\Debug\
+C:\Users\Robert\Source\Repos\Library\obj\Release\
 LibraryGUI
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Robert\Source\Repos\Library\App.xaml
 5420225948
 
@@ -16,5 +16,5 @@ C:\Users\Robert\Source\Repos\Library\App.xaml
 55-1982420796
 Views\CreateBook.xaml;MainWindow.xaml;Views\CreateAuthors.xaml;Views\CreateCategory.xaml;Views\ShowDatas.xaml;
 
-False
+True
 
