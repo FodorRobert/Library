@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\fodorr\Downloads\LibraryGUI12B-main\LibraryGUI12B-main\obj\Debug\
+C:\Users\fodorr\Source\Repos\Library\obj\Debug\
 LibraryGUI
 none
 false
 DEBUG;TRACE
-C:\Users\fodorr\Downloads\LibraryGUI12B-main\LibraryGUI12B-main\App.xaml
-5420225948
+C:\Users\fodorr\Source\Repos\Library\App.xaml
+111187953342
 
-1852058435
-55-1512467152
-Views\CreateBook.xaml;MainWindow.xaml;Views\CreateAuthors.xaml;Views\CreateCategory.xaml;Views\ShowDatas.xaml;
+25-1507752667
+55-1125327092
+Views\CreateBook.xaml;MainWindow.xaml;Views\CreateAuthors.xaml;Views\CreateCategory.xaml;Views\DeleteAuthor.xaml;Views\DeleteBook.xaml;Views\DeleteCategory.xaml;Views\ShowDatas.xaml;Views\UpdateAuthor.xaml;Views\UpdateBook.xaml;Views\UpdateCategory.xaml;
 
 True
 

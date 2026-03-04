@@ -8,70 +8,83 @@ using System.Threading.Tasks;
 
 namespace LibraryGUI.Datas
 {
-    internal class Create
+    internal class Delete
     {
-        LibraryResults libraryResults = new LibraryResults();
-        public LibraryResults DeleteAuthor(string name)
+        
+        public object DeleteAuthors(int id)
         {
+
+            LibraryResults results = new LibraryResults();
             using (var context = new librarydbContext())
             {
-                var author = new Authors
+                var author = context.Categories.Find(id);
+                if (author != null)
                 {
-                    AuthorName = name
-                };
-
-                context.Authors.Remove(author);
-                context.SaveChanges();
-                libraryResults.Message = "Sikeres szerző törlés";
-                libraryResults.Result = author.AuthorName;
-
-
-                return libraryResults;
+                    context.Categories.Remove(author);
+                    context.SaveChanges();
+                    results.Message = "Author deleted successfully.";
+                    results.Result = true;
+                    return results;
+                }
+                else
+                {
+                    results.Message = "Author not found.";
+                    results.Result = false;
+                    return results;
+                }
             }
 
         }
 
-        public LibraryResults DeleteCategory(string categoryName)
+        public object DeleteBooks(int id)
         {
+
+            LibraryResults results = new LibraryResults();
             using (var context = new librarydbContext())
             {
-                var category = new Categories
+                var book = context.Categories.Find(id);
+                if (book != null)
                 {
-                    CategoryName = categoryName
-                };
-
-                context.Categories.Remove(category);
-                context.SaveChanges();
-                libraryResults.Message = "Sikeres kategória törlés";
-                libraryResults.Result = category.CategoryName;
-
-
-                return libraryResults;
+                    context.Categories.Remove(book);
+                    context.SaveChanges();
+                    results.Message = "Book deleted successfully.";
+                    results.Result = true;
+                    return results;
+                }
+                else
+                {
+                    results.Message = "Book not found.";
+                    results.Result = false;
+                    return results;
+                }
             }
 
         }
 
-        public LibraryResults DeleteBooks(string title, DateTime date, int authId, int categoryId)
+        public object DeleteCategory(int id)
         {
+
+            LibraryResults results = new LibraryResults();
             using (var context = new librarydbContext())
             {
-                var book = new Books
+                var category = context.Categories.Find(id);
+                if (category != null)
                 {
-                    Title = title,
-                    PublishDate = date,
-                    AuthorId = authId,
-                    CategoryId = categoryId
-                };
-
-                context.Books.Remove(book);
-                context.SaveChanges();
-                libraryResults.Message = "Sikeres könyv törlés";
-                libraryResults.Result = book;
-
-
-                return libraryResults;
+                    context.Categories.Remove(category);
+                    context.SaveChanges();
+                    results.Message = "Category deleted successfully.";
+                    results.Result = true;
+                    return results;
+                }
+                else
+                {
+                    results.Message = "Category not found.";
+                    results.Result = false;
+                    return results;
+                }
             }
 
         }
+
     }
 }

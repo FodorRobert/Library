@@ -172,6 +172,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Datas\Delete.cs" />
+    <Compile Include="Datas\Update.cs" />
     <Compile Include="Views\CreateBook.xaml.cs">
       <DependentUpon>CreateBook.xaml</DependentUpon>
     </Compile>
@@ -183,8 +184,26 @@
     <Compile Include="Views\CreateCategory.xaml.cs">
       <DependentUpon>CreateCategory.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\DeleteAuthor.xaml.cs">
+      <DependentUpon>DeleteAuthor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeleteBook.xaml.cs">
+      <DependentUpon>DeleteBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeleteCategory.xaml.cs">
+      <DependentUpon>DeleteCategory.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ShowDatas.xaml.cs">
       <DependentUpon>ShowDatas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpdateAuthor.xaml.cs">
+      <DependentUpon>UpdateAuthor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpdateBook.xaml.cs">
+      <DependentUpon>UpdateBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpdateCategory.xaml.cs">
+      <DependentUpon>UpdateCategory.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\CreateBook.xaml">
       <SubType>Designer</SubType>
@@ -211,7 +230,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\DeleteAuthor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DeleteBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DeleteCategory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ShowDatas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UpdateAuthor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UpdateBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UpdateCategory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

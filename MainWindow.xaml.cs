@@ -32,35 +32,33 @@ namespace LibraryGUI
             InitializeComponent();
             MainPage.Navigate(showDatas);
             var list = read.ReadBooks();
-            showDatas.dataGrid1.ItemsSource = list;
-
+            showDatas.ItemsSource = list;
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             MainPage.Navigate(showDatas);
             var list = read.ReadAuthors();
-            showDatas.dataGrid1.ItemsSource = list;
+            showDatas.ItemsSource = list;
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
             MainPage.Navigate(showDatas);
             var list = read.ReadCategories();
-            showDatas.dataGrid1.ItemsSource = list;
+            showDatas.ItemsSource = list;
         }
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
             MainPage.Navigate(showDatas);
             var list = read.ReadBooks();
-            showDatas.dataGrid1.ItemsSource = list;
+            showDatas.ItemsSource = list;
         }
 
         private void MenuItem_Click_3(object sender, RoutedEventArgs e)
         {
             MainPage.Navigate(new CreateAuthors());
-
         }
 
         private void MenuItem_Click_4(object sender, RoutedEventArgs e)
@@ -71,6 +69,37 @@ namespace LibraryGUI
         private void MenuItem_Click_5(object sender, RoutedEventArgs e)
         {
             MainPage.Navigate(new CreateBook());
+        }
+
+        private void MenuItem_Click_6(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new UpdateAuthor());
+        }
+        
+        private void MenuItem_Click_7(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new UpdateBook());
+        }
+
+        
+        private void MenuItem_Click_8(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new UpdateCategory());
+        }
+        
+        private void MenuItem_Click_9(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new DeleteAuthor());
+        }
+
+        private void MenuItem_Click_10(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new DeleteBook());
+        }
+
+        private void MenuItem_Click_11(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new DeleteCategory());
         }
     }
 }
