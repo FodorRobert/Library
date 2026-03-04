@@ -384,3 +384,5 @@ C:\Users\fodorr\Source\Repos\Library\obj\Debug\Views\DeleteCategory.g.cs
 C:\Users\fodorr\Source\Repos\Library\obj\Debug\Views\UpdateAuthor.g.cs
 C:\Users\fodorr\Source\Repos\Library\obj\Debug\Views\DeleteAuthor.g.cs
 C:\Users\fodorr\Source\Repos\Library\obj\Debug\Views\DeleteBook.g.cs
+C:\Users\fodorr\Source\Repos\Library\obj\Debug\Views\UpdateBook.g.cs
+C:\Users\fodorr\Source\Repos\Library\obj\Debug\Views\UpdateCategory.g.cs

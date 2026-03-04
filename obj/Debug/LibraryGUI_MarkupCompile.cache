@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\fodorr\Source\Repos\Library\App.xaml
-9-1742201023
+111187953342
 
-22-1494129256
+24574335951
 55-1125327092
-Views\CreateBook.xaml;MainWindow.xaml;Views\CreateAuthors.xaml;Views\CreateCategory.xaml;Views\DeleteAuthor.xaml;Views\DeleteBook.xaml;Views\DeleteCategory.xaml;Views\ShowDatas.xaml;Views\UpdateAuthor.xaml;
+Views\CreateBook.xaml;MainWindow.xaml;Views\CreateAuthors.xaml;Views\CreateCategory.xaml;Views\DeleteAuthor.xaml;Views\DeleteBook.xaml;Views\DeleteCategory.xaml;Views\ShowDatas.xaml;Views\UpdateAuthor.xaml;Views\UpdateBook.xaml;Views\UpdateCategory.xaml;
 
 True
 

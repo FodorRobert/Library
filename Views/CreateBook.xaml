@@ -22,7 +22,8 @@
             <!-- Label -->
             <Label Content="Könyv címe"
            FontWeight="Bold"
-           Margin="0,0,0,5"/>
+           Margin="0,0,0,5"
+                   Foreground="#a08800"/>
 
             <Border BorderBrush="Gray"
             BorderThickness="0,0,0,2"
@@ -37,7 +38,8 @@
 
             <Label Content="Kiadás dáruma"
              FontWeight="Bold"
-             Margin="0,0,0,5"/>
+             Margin="0,0,0,5"
+                   Foreground="#a08800"/>
 
               <Border BorderBrush="Gray"
               BorderThickness="0,0,0,2"
@@ -52,7 +54,8 @@
 
             <Label Content="Szerző Id"
                FontWeight="Bold"
-               Margin="0,0,0,5"/>
+               Margin="0,0,0,5"
+                   Foreground="#a08800"/>
 
             <!-- TextBox csak alsó kerettel -->
             <Border BorderBrush="Gray"
@@ -68,7 +71,8 @@
 
             <Label Content="Ketgória Id"
                FontWeight="Bold"
-               Margin="0,0,0,5"/>
+               Margin="0,0,0,5"
+                   Foreground="#a08800"/>
 
             <!-- TextBox csak alsó kerettel -->
             <Border BorderBrush="Gray"
